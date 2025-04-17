@@ -1,0 +1,28 @@
+TODO and Changes in the Cubes in 2025
+====================
+As I (Krzysztof Sobolewski) in 2025 have created a fork of the great project "cubes" by Stefan Urbanek, and named the fork "cubes_anew",
+I've created a new set of goals to be fulfilled:
+
+- constraining SQLAlchemy to 1.40 for now; 2.0 has a lot of deprecative changes related to binding a connection to metadata objects, that
+struggling with them for now would create a hasslle. TODO for the future.
+
+- making the project run both on Python 3.9 and Python 3.12
+
+- rewriting the server.py part as a new script server_api.py. Nowadays the server.py has the "read" functions only,
+while the target server_api.py MUST contain all useful functions, including:
+    - cube creation, modification, removal
+    - workspace creation, modification, removal
+    - data updating
+    - making calculations
+    - new types of calculations including forecasting
+
+- creating a useful frontend, preferably in Angular or VueJs
+- creating a useful multiplatform app (Android and Desktop), preferably in Kotlin + Compose Multiplatform
+- creating export-import functions for compatibility with other OLAP solutions, as well as for backup
+- adding some MDX parser (
+    MDXPY?
+        https://pypi.org/project/mdxpy/
+        https://code.cubewise.com/open-source/tm1py/mdxpy/
+        https://github.com/cubewise-code/mdxpy
+
+- data exchange with some Spreadsheet software, probably using XMLA format

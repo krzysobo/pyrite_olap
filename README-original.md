@@ -1,4 +1,4 @@
-Cubes Anew - Online Analytical Processing Framework for Python based on "Cubes" by Stefan Urbanek
+Cubes - Online Analytical Processing Framework for Python
 =========================================================
 
 [![Join the chat at https://gitter.im/DataBrewery/cubes](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DataBrewery/cubes?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
