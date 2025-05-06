@@ -1,4 +1,4 @@
-"""OLAP Cubes"""
+"""OLAP Cubes_anew -> """
 
 __version__ = "1.1"
 

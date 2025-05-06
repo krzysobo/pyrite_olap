@@ -87,10 +87,24 @@ Build the documentation like so. ::
 Outputs will go in ``doc/_*``.
 
 
+Testing
+------------
+
+
+```cd tests```
+
+For all tests:
+  ```python3 -m unittest tests```
+
+For a selected test:
+  ```python3 -m unittest test_auth.py
+    https://docs.python.org/3/library/unittest.html```
+
 Requirements
 ------------
 
-Python >= 2.7 and Python >= 3.4.1
+Python >= 2.7 and Python >= 3.4.1. The revived version cubes_anew has only been tested for now on Python 3.9 and 3.12,
+but all other tests are welcome (I didn't include Python 2.7 or any of "2" line, though. May it rest in peace).
 
 Most of the requirements are soft (optional) and need to be satisfied only if
 certain parts of cubes are being used.

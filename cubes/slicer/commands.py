@@ -621,3 +621,5 @@ def main(*args, **kwargs):
             click.echo("\nError: {}".format(e), err=True)
             sys.exit(1)
 
+if __name__ == '__main__':
+    cli()

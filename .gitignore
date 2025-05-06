@@ -31,3 +31,8 @@ doc/_build/
 # Coverage output
 .coverage
 htmlcov
+
+.venv39A
+.venv39
+.venv39A/*
+.venv39/*I

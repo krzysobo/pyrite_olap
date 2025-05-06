@@ -1,4 +1,5 @@
 import os
+import os
 import unittest
 from cubes import Workspace
 from cubes import compat

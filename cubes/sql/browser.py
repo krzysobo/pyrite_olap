@@ -307,6 +307,9 @@ class SQLBrowser(AggregationBrowser):
                                 labels=labels)
         statement = paginate_query(statement, page, page_size)
 
+        print("\n\n statement ", statement)
+        print("\n\n labels ", labels)
+
         result = self.execute(statement, "members")
 
         return ResultIterator(result, labels)

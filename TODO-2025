@@ -16,6 +16,47 @@ while the target server_api.py MUST contain all useful functions, including:
     - making calculations
     - new types of calculations including forecasting
 
+
+- tidying up paths. a lot of relative paths make a havoc, the project should be concise and work from the root directory (and running commands like slicer installed by pip should be an OPTION, not the only choice)
+
+
+- what is in Slicer (cubes/slicer/commands.py)
+    - cli - commands 
+
+    - serve - development server
+
+    - ext-info - extension info - cube extensions list
+
+    - list - list of cubes (name, label, description)
+    - model - information about model metadata, including errors/validation
+
+    - test - testing a cube, including testful aggregation,  store etc
+
+    - convert - conversion of model between model formats
+
+
+    === commands for SQL store ====================
+    - sql - sql store commands
+            """SQL store commands"""
+
+    - denormalize
+            """Create denormalized view(s) from cube(s)."""
+
+    - aggregate - sql_aggregate - aggregation of cubes (a selected cube or all cubes, if not specified)
+            """Create pre-aggregated table from cube(s). If no cube is specified, then
+            all cubes are aggregated. Target table can be specified only for one cube,
+            for multiple cubes naming convention is used.
+    """
+
+    - members
+            """Aggregate a cube"""
+
+
+---------------------------------------
+---------------------------------------
+---------------------------------------
+
+
 - creating a useful frontend, preferably in Angular or VueJs
 - creating a useful multiplatform app (Android and Desktop), preferably in Kotlin + Compose Multiplatform
 - creating export-import functions for compatibility with other OLAP solutions, as well as for backup

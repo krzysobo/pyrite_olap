@@ -1,5 +1,5 @@
 python-dateutil
 jsonschema
 expressions
-grako
+grako @ git+https://github.com/krzysobo/grako_revived
 click

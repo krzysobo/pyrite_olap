@@ -4,8 +4,9 @@ import sys
 import traceback
 from collections import OrderedDict
 
-from flask import Blueprint, Response, request, g, current_app, safe_join, make_response
+from flask import Blueprint, Response, request, g, current_app, make_response
 from flask import render_template, redirect
+from werkzeug.utils import safe_join
 
 from ..workspace import Workspace, SLICER_INFO_KEYS
 from ..query import Cell, cut_from_dict
