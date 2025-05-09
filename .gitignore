@@ -36,3 +36,4 @@ htmlcov
 .venv39
 .venv39A/*
 .venv39/*I
+webshop-facts-daily-*.csv
